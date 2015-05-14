@@ -1,0 +1,25 @@
+[user]
+	name = Maxim Orlov
+	email = mail@orlovmax.com
+[alias]
+  co = checkout
+  ci = commit
+  cim = commit -m
+  ciam = commit -a -m
+  ada = add --all && git status
+  st = status
+  br = branch
+  hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
+  pahom = push origin master
+  pahomf = push origin master --force
+  pesok = push origin source
+  pesokf = push origin source --force
+  pegas = git push origin gh-pages
+  pegasf = git push origin gh-pages --force
+  amend = commit -a --amend --no-edit
+  amenh = commit -a --amend -C HEAD
+[core]
+	autocrlf = false
+	editor = 'D:/OpenServer/progs/_Office/Sublime_text/sublime_text.exe'
