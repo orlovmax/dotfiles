@@ -3,6 +3,7 @@
 	email = mail@orlovmax.com
 [alias]
   co = checkout
+  cb = checkout -b
   ci = commit
   cim = commit -m
   ciam = commit -a -m
