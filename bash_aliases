@@ -3,6 +3,7 @@ alias st='git status '
 
 # Check history
 alias hist='git log --pretty=format:"%h | %ad | %s%d [%an]" --graph --date=short'
+
 alias log=hist
 
 # Add all files and show status
@@ -15,7 +16,7 @@ alias cim='git commit -m '
 alias ciam='git commit -am'
 
 # Amend last commit
-alias amend='git amend'
+alias amend='git commit -a --amend --no-edit'
 
 # Show current branch
 alias br='git branch '
