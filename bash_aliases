@@ -45,6 +45,9 @@ alias resoft='git reset --soft '
 # Hard reset
 alias rehard='git reset --hard '
 
+# Get commit hash
+alias hash='git rev-parse '
+
 #Switch branch
 alias co='git checkout '
 
