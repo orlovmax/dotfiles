@@ -73,8 +73,10 @@ function new { touch "$@"; explorer "$@"; }
 function cr { touch "$@"; }
 
 function jpost {
-	cp -a _dev/templates/pages/_drafts/_draft.md _dev/templates/pages/_posts/$@.md;
-	explorer "$(pwd -W | sed  's/\//\\/g')\_dev\templates\pages\_posts\\$@.md";
-	mkdir _dev/img/post/$@;
-	explorer "$(pwd -W | sed  's/\//\\/g')\_dev\img\post\\$@";
+	cp -a _publ/pages/_drafts/_draft.md _publ/pages/_posts/$@.md;
+	sed -i "s/_PATH/$@/g" "$(pwd -W | sed  's/\//\\/g')\_publ\pages\_posts\\$@.md";
+	explorer "$(pwd -W | sed  's/\//\\/g')\_publ\pages\_posts\\$@.md";
+	mkdir _publ/img/post/$@;
+	mkdir _publ/img/post/$@/meta;
+	explorer "$(pwd -W | sed  's/\//\\/g')\_publ\img\post\\$@";
 }
