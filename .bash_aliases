@@ -15,6 +15,9 @@ alias cim='git commit -m '
 # Add changes and commit
 alias ciam='git commit -am'
 
+# Add changes and commit with current date in message
+alias ciamd='git commit -am "update_`date +\"%Y-%m-%d\"`"'
+
 # Amend last commit - DANGER ZONE
 alias amend='git commit -a --amend --no-edit'
 
