@@ -27,20 +27,11 @@ alias br='git branch '
 # Push to master
 alias pahom='git push origin master'
 
-# Force push to master - DANGER ZONE
-alias pahomf='git push origin master --force'
-
 # Push to source
 alias pesok='git push origin source'
 
-# Force push to source - DANGER ZONE
-alias pesokf='git push origin source --force'
-
 # Push to gh-pages
 alias pegas='git push origin gh-pages'
-
-# Force push to gh-pages - DANGER ZONE
-alias pegasf='git push origin gh-pages --force'
 
 # Soft reset
 alias resoft='git reset --soft '
