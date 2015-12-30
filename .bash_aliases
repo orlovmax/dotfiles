@@ -76,8 +76,5 @@ function jpost {
 }
 
 function npmtestclear {
-	shopt -s extglob
-	rm -r !(node_modules)
-	rm -rf .[^.]* && rm -rf ..?*
-	shopt -u extglob
+	find * -maxdepth 0 -name 'node_modules' -prune -o -exec rm -rf {} \;
 }
