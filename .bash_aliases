@@ -83,3 +83,10 @@ function jpost {
 	mkdir _publ/img/post/$@/meta;
 	explorer "$(pwd -W | sed  's/\//\\/g')\_publ\img\post\\$@";
 }
+
+function npmtestclear {
+	shopt -s extglob
+	rm -r !(node_modules)
+	rm -rf .[^.]* && rm -rf ..?*
+	shopt -u extglob
+}

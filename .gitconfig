@@ -7,3 +7,4 @@
 [core]
 	autocrlf = false
 	editor = 'D:/OpenServer/progs/_Office/Sublime_text/sublime_text.exe'
+	excludesfile = ~/.gitignore
