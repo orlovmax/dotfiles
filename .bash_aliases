@@ -77,4 +77,5 @@ function jpost {
 
 function npmtestclear {
 	find * -maxdepth 0 -name 'node_modules' -prune -o -exec rm -rf {} \;
+	rm -rf .[^.]* && rm -rf ..?*
 }
