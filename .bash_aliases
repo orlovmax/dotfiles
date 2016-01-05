@@ -76,6 +76,10 @@ function jpost {
 }
 
 function npmtestclear {
-	find * -maxdepth 0 -name 'node_modules' -prune -o -exec rm -rf {} \;
-	rm -rf .[^.]* && rm -rf ..?*
+	if [ "${PWD##*/}" == "npm_test" ]; then
+		find * -maxdepth 0 -name 'node_modules' -prune -o -exec rm -rf {} \;
+		rm -rf .[^.]* && rm -rf ..?*
+	else
+		echo "Wrong directory! 'npmtestclear' can be executed only within 'npm_test' directory"
+	fi
 }
