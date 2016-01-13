@@ -1,0 +1,8 @@
+BoldAsFont=yes
+Transparency=low
+FontSmoothing=default
+BoldAsColour=yes
+FontIsBold=no
+Font=Lucida Console
+FontHeight=10
+Term=xterm
