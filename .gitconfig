@@ -6,5 +6,5 @@
   dump = cat-file -p
 [core]
 	autocrlf = false
-	editor = 'D:/OpenServer/progs/_Office/Sublime_text/sublime_text.exe'
+	editor = 'D:/system/utils/Sublime_text/sublime_text.exe' -w
 	excludesfile = ~/.gitignore
